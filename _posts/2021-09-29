@@ -1,0 +1,52 @@
+---
+layout: single
+title:  "C++ 4주차 간단요약"
+---
+#
+
+##함수 만들기 (4): 두 수를 더해서(빼서) 리턴하는 함수 선언해보기
+
+##
+'''
+#include <stdio.h>
+int add(int x, int y) 
+{ 
+  return x + y ;
+} 
+int main() 
+{ 
+  int x;
+  x=add(2, 3);
+  printf("%d", x);
+  return 0;
+}
+'''
+
+### C++ 스타일로 변환
+###
+'''
+#include <iostream>
+using namespace std;
+int sub(int x, int y);
+int main() 
+{
+	int x;
+	x = sub(5, 3);
+	cout << (x) << endl;
+	return 0;
+}
+int sub(int x, int y)
+{
+	return x - y;
+}
+
+/*
+실행결과
+2
+*/
+'''
+
+
+
+# I made GitHub for the first time today.
+#출처:C++프로그래밍(21-2학기)한성현교수 강의 내용 변형 및 요약
